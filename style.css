@@ -1,0 +1,14 @@
+:root{--bg:#201334;--panel:#2a1f3f;--card:#332553;--ink:#e7e3f8;--muted:#bfb6da;--accent:#5cc4ff;--accent2:#a16eff}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:system-ui,'Segoe UI',Arial;background:var(--bg);color:var(--ink)}
+button{background:var(--accent);color:#102232;border:none;padding:8px 12px;border-radius:8px;font-weight:600;cursor:pointer}button:hover{filter:brightness(1.06)}
+.toolbar{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;background:#1a0f2a;border-bottom:1px solid #44315f;position:sticky;top:0;z-index:3}
+.toolbar .left{display:flex;gap:8px;flex-wrap:wrap}.toolbar .right{display:flex;gap:8px;align-items:center;color:var(--muted)}.status-dot{width:10px;height:10px;border-radius:50%;background:#ff6262;display:inline-block}
+.layout{display:grid;grid-template-columns:420px 1fr;height:calc(100vh - 52px)}.panel{background:var(--panel);border-right:1px solid #3f2f5b;display:flex;flex-direction:column;overflow:auto}
+.panel h3{margin:12px;padding:0 0 8px;border-bottom:1px solid #3f2f5b;font-size:14px;color:var(--muted)}.panel-body{padding:12px;display:grid;gap:8px}
+textarea{width:100%;border-radius:8px;border:1px solid #3f2f5b;background:var(--card);color:var(--ink);padding:10px}
+input[type='file']{background:var(--card);padding:8px;border-radius:8px;border:1px solid #3f2f5b;color:var(--muted)}
+.table{display:grid}.row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;padding:6px 8px;border-bottom:1px solid #3f2f5b}.row.head{background:#3b2b5a;color:#d8cff1;font-weight:700;position:sticky;top:0}
+.row div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.actions{display:flex;justify-content:space-between;align-items:center}.attach{display:grid;gap:8px}
+#attach-list{display:flex;flex-wrap:wrap;gap:6px}.chip{background:var(--card);border:1px solid #3f2f5b;border-radius:999px;padding:4px 8px;color:var(--muted)}
+.send-bar{margin-top:auto;padding:12px;border-top:1px solid #3f2f5b;display:flex;gap:8px;justify-content:flex-end}.webwrap{position:relative}webview{position:absolute;inset:0;border:none}
+@media(max-width:1100px){.layout{grid-template-columns:1fr}.panel{height:auto}}

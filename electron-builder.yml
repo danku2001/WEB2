@@ -1,0 +1,15 @@
+appId: com.yourcompany.wsb
+productName: WS Broadcaster
+directories:
+  output: dist
+files:
+  - "index.html"
+  - "style.css"
+  - "app.js"
+  - "main.js"
+  - "preload.js"
+  - "package.json"
+  - "icon.png"
+win:
+  target: [portable, nsis]
+  artifactName: "${productName}-Setup-${version}.exe"

@@ -1,0 +1,16 @@
+{
+  "name": "wsb-electron",
+  "version": "0.1.1",
+  "description": "WhatsApp Broadcaster - Electron MVP (flat structure)",
+  "main": "main.js",
+  "author": "You",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder -w"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
